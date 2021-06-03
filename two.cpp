@@ -38,7 +38,7 @@ int main()
      }
      
      int result2=kadane(arr,n);
-     result2=result2+sum;
+     result2=sum+result2;           //sum-(-result2)
      int final=max(result1,result2);
      if(result1<0)
      cout<<result1<<endl;
